@@ -54,7 +54,13 @@ $(document).ready(function() {
 	    else{input.removeClass("valid").addClass("invalid");}
 	});
 	
-	
+	$(window).scroll(function(){
+		  var sticky = $('.header-container'),
+		      scroll = $(window).scrollTop();
+
+		  if (scroll >= 100) sticky.addClass('fixed');
+		  else sticky.removeClass('fixed');
+		});
 	
 	
 });
