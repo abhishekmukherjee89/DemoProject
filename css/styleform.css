@@ -1,0 +1,68 @@
+.wrapper1{
+  position: fixed;
+  top: 40%;
+  left: 35%;
+  display:none;
+  width:300px;
+  height:200px;
+  border-width:5px;	
+  border-style:inset;
+  background-color:transparent;
+ }
+
+.inputname{
+  margin-top:50px;
+  height: 25px;
+  width:250px;
+  }
+
+.inputpassword{
+  margin-top:5px;
+  height: 25px;
+  width:250px;
+  margin-left:12px;
+  }
+
+.signin{
+  margin-top:39px;
+  align: center;
+  height: 25px;
+  width:250px;
+  margin-left:14px;
+}
+
+.wrapper2{
+  position: fixed;
+  top: 40%;
+  left: 35%;
+  display:none;
+  width:300px;
+  height:300px;
+  border-width:5px;	
+  border-style:inset;
+  background-color:transparent;
+}
+
+.confirmpassword{
+  margin-top:5px;
+  height: 25px;
+  width:250px;
+  margin-left:6px;  
+}
+
+.inputemail{
+  margin-top:5px;
+  align: center;
+  height: 25px;
+  width:250px;
+  margin-left:12px; 
+}
+
+.close{
+  color:red;
+  float:right;
+  border-width:5px;	
+  border-style:inset;
+  cursor: pointer;
+  
+}
