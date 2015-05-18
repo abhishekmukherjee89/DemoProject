@@ -8,6 +8,18 @@
 <link rel="stylesheet" type="text/css" href="css/design.css">
 <script type="text/javascript" src="js/jquery-2.1.3.min.js"></script>
 <script type="text/javascript" src="js/logic.js"></script>
+<script type="text/javascript" src="js/data.js"></script>
+<script>
+function myFunction(arr) {
+    var out = "";
+    var i;
+    for(i = 0; i<arr.length; i++) {
+        out +=  arr[i].name + 
+        arr[i].email + arr[i].username + arr[i].password + arr[i].confirm + '<br>';
+    }
+    document.getElementById("about").innerHTML = out;
+}
+</script>
 </head>
 <body>
   <div class="wrapper">
@@ -20,7 +32,7 @@
         </div>
         <nav class="menu">
           <ul class="menu--top">
-            <li class="menu--top_list"><span class="menu--top_text">Home</span></li>
+            <li class="menu--top_list"><a href="#home"><span class="menu--top_text">Home</span></a></li>
             <li class="menu--top_list"><a href="#about"><span class="menu--top_text">About
                 us</span></a></li>
             <li class="menu--top_list"><a href="#gallery"><span
@@ -42,7 +54,7 @@
 
     <!-- Content -->
     <div class="main">
-      <div class="home">
+      <div id="home">
         <div class="home-image">
           <img src="images/Desert.jpg" alt="Desert" width="100%"
             height="500px">
@@ -91,24 +103,26 @@
         </div>
         <div class="input-dialog">
           <label class="input--dialog_text">User Name</label>
-          <input type="text" id="usr_name" name="user_name" placeholder="Enter your username">
+          <input type="text" id="usr_name_2" placeholder="Enter your username">
         </div>
         <div class="input-dialog">
           <label class="input--dialog_text">Enter Password</label>
-          <input type="password" id="user_password" name="user_password">
+          <input type="password" id="user_password_2" placeholder="Enter password">
         </div>
         <div class="input-dialog">
           <label class="input--dialog_text">Confirm Password</label>
-          <input type="password" id="conf_password" name="conf_password">
+          <input type="password" id="conf_password" placeholder="Confirm password">
+          <span class="error-input">Invalid Input</span>
         </div>
-        <div class="button-submit"><button type="submit">Sign In</button></div>
+        <div class="button-submit"><button type="submit">Sign Up</button></div>
         <div class="button-reset"><button type="reset">Reset</button></div>
       </form>
 
     </div>
   
     <!-- Footer -->
-    <footer> </footer>
+    <footer> 
+    </footer>
   </div>
 </body>
 </html>

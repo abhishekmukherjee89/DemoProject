@@ -7,20 +7,23 @@ body {
 .header-container {
   width: 100%;
   height: 160px;
-  background-color:lightblue;
+  background-color: lightblue;
+  z-index: 10;
 }
 
-.fixed {
-    position: fixed;
-    top:0; left:0;
-    width: 100%; }
-    
+.fixed-header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+
 header {
-  height:160px;
+  height: 160px;
   margin-left: 20px;
   margin-right: 20px;
-  padding:10px;
-  opacity:0.8;
+  padding: 10px;
+  opacity: 0.8;
 }
 
 .logo {
@@ -36,6 +39,7 @@ header {
   border: 2px solid black;
   padding-right: 3px;
   background-color: black;
+  cursor: pointer;
 }
 
 .menu--top_text {
@@ -59,22 +63,33 @@ header {
 }
 
 /* Content */
-
-#about{
-  margin-right:20px;
-  margin-left:20px;
-  width:100%;
-  height:500px;
+.main {
+  clear: both;
+}
+#home {
+  width: 100%;
+  height: 500px;
 }
 
-#gallery{
-  width:100%;
-  height:500px;
+#about {
+  margin-right: 20px;
+  margin-left: 20px;
+  width: 100%;
+  height: 500px;
 }
 
-#contact{
-  width:100%;
-  height:500px;
+#gallery {
+  width: 100%;
+  height: 500px;
+  margin-right: 20px;
+  margin-left: 20px;
+}
+
+#contact {
+  width: 100%;
+  height: 500px;
+  margin-right: 20px;
+  margin-left: 20px;
 }
 
 .dialog-container {
@@ -89,7 +104,7 @@ header {
 
 .dialog {
   height: 200px;
-  width: 400px;
+  width: 450px;
   position: fixed;
   top: 40%;
   top: calc(50% - 100px);
@@ -119,20 +134,25 @@ header {
   display: inline;
 }
 
-.error{
-    display: none;
-    margin-left: 10px;
-}       
- 
-.error_show{
-    color: red;
-    margin-left: 10px;
+.error {
+  display: none;
+  margin-left: 10px;
 }
 
-input.invalid, textarea.invalid{
-    border: 2px solid red;
+.error_show {
+  color: red;
+  margin-left: 10px;
 }
- 
-input.valid, textarea.valid{
-    border: 2px solid green;
+
+.error-input {
+  display: none;
+  margin-left: 10px;
+}
+
+input.invalid, textarea.invalid {
+  border: 2px solid red;
+}
+
+input.valid, textarea.valid {
+  border: 2px solid green;
 }
